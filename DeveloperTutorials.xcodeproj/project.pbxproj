@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7544DE011F2E141D000145CC /* VideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7544DE001F2E141D000145CC /* VideoCell.m */; };
 		757D73A71F2DB6A30053A818 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 757D73A61F2DB6A30053A818 /* main.m */; };
 		757D73AA1F2DB6A30053A818 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 757D73A91F2DB6A30053A818 /* AppDelegate.m */; };
 		757D73AD1F2DB6A30053A818 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 757D73AC1F2DB6A30053A818 /* ViewController.m */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7544DDFF1F2E141D000145CC /* VideoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoCell.h; sourceTree = "<group>"; };
+		7544DE001F2E141D000145CC /* VideoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoCell.m; sourceTree = "<group>"; };
 		757D73A21F2DB6A30053A818 /* DeveloperTutorials.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeveloperTutorials.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		757D73A61F2DB6A30053A818 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		757D73A81F2DB6A30053A818 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -42,6 +45,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7544DDFE1F2E13F0000145CC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7544DDFF1F2E141D000145CC /* VideoCell.h */,
+				7544DE001F2E141D000145CC /* VideoCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		757D73991F2DB6A30053A818 = {
 			isa = PBXGroup;
 			children = (
@@ -61,6 +73,7 @@
 		757D73A41F2DB6A30053A818 /* DeveloperTutorials */ = {
 			isa = PBXGroup;
 			children = (
+				7544DDFE1F2E13F0000145CC /* View */,
 				757D73BC1F2DB6D80053A818 /* Services */,
 				757D73A81F2DB6A30053A818 /* AppDelegate.h */,
 				757D73A91F2DB6A30053A818 /* AppDelegate.m */,
@@ -165,6 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				757D73AD1F2DB6A30053A818 /* ViewController.m in Sources */,
+				7544DE011F2E141D000145CC /* VideoCell.m in Sources */,
 				757D73BF1F2DB71A0053A818 /* HTTPService.m in Sources */,
 				757D73AA1F2DB6A30053A818 /* AppDelegate.m in Sources */,
 				757D73A71F2DB6A30053A818 /* main.m in Sources */,
@@ -328,6 +342,7 @@
 				757D73BB1F2DB6A30053A818 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
