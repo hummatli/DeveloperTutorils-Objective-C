@@ -33,7 +33,7 @@
                                 <rect key="frame" x="16" y="38" width="343" height="629"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="102" id="fWY-es-Lwd" customClass="VideoCell">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="main" rowHeight="102" id="fWY-es-Lwd" customClass="VideoCell">
                                         <rect key="frame" x="0.0" y="28" width="343" height="102"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fWY-es-Lwd" id="FTP-kT-Fw1">
@@ -110,6 +110,9 @@
                             <constraint firstAttribute="trailing" secondItem="62f-Yc-8uO" secondAttribute="trailing" id="vb9-Fk-zom"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="uxa-qN-IpV" id="f12-dC-RkI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
