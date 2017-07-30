@@ -19,18 +19,32 @@ var tutorials = [
   {
     id: 1,
     title: "Android Studio Tutorial For Beginners",
-    description: "Lear how to install Androd Studio and go through this tutoril how to create your first Android app",
-    thumbnail: "https://lh3.ggpht.com/cWJcuSdRqNvocpYqjgThbvyq78cjIP_LOyxBQimP3I4mb4Uu8My_hJ94qEscrI30QA=w300",
-    iframe: '<iframe width="560" height="315" src="https://www.youtube.com/embed/F-k5gwz_91o" frameborder="0" allowfullscreen></iframe>'
+    description: "Learn how to install Android Studio and then go through this tutorial to build your very first app",
+    iframe: '<div class="container"><iframe class="video" src="https://www.youtube.com/embed/F-k5gwz_91o" frameborder="0" allowfullscreen></iframe></div>',
+    thumbnail: "https://s3-us-west-2.amazonaws.com/devslopesvideo/androidwhite-learn.png"
   },
   {
     id: 2,
-    title: "iOS App Icon Designe in Photoshop",
-    description: "Lear how to install Androd Studio and go through this tutoril how to create your first Android app",
-    thumbnail: "https://lh3.ggpht.com/cWJcuSdRqNvocpYqjgThbvyq78cjIP_LOyxBQimP3I4mb4Uu8My_hJ94qEscrI30QA=w300",
-    iframe: '<iframe width="560" height="315" src="https://www.youtube.com/embed/F-k5gwz_91o" frameborder="0" allowfullscreen></iframe>'
+    title: "How to Support High Resolution on iOS - @1x @2x @3x",
+    description: "Learn how to support multiple screen resolutions and devices such as iPhone 4, iPhone 5, iPhone 6, iPhone 6 Plus",
+    thumbnail: "https://s3-us-west-2.amazonaws.com/devslopesvideo/ios-image-sizes.png",
+    iframe: '<div class="container"><iframe class="video" src="https://www.youtube.com/embed/WOnczJSsMqk" frameborder="0" allowfullscreen></iframe></div>'
+  },
+  {
+    id: 3,
+    title: "How to build an Apple TV App Tutorial for tvOS",
+    description: "In this app we download popular movies from an IMDB service and implement scrolling and navigation on the Apple TV",
+    thumbnail: "https://s3-us-west-2.amazonaws.com/devslopesvideo/tv-test.png",
+    iframe: '<div class="container"><iframe class="video" src="https://www.youtube.com/embed/XmLdEcq-QNI" frameborder="0" allowfullscreen></iframe></div>'
+  },
+  {
+    id: 4,
+    title: "Photoshop Tutorial For Beginners How To Create a Log",
+    description: "Learn how to make a professional logo in Photoshop without any design experience. This is a Photoshop tutorial for beginners that will give you all the basics of Photoshop that you need to make a logo.",
+    thumbnail: "https://s3-us-west-2.amazonaws.com/devslopesvideo/logo.png",
+    iframe: '<div class="container"><iframe class="video" src="https://www.youtube.com/embed/CrKnswpftp4" frameborder="0" allowfullscreen></iframe></div>'
   }
-]
+];
 
 
 app.get('/tutorials', function(req, res) {
