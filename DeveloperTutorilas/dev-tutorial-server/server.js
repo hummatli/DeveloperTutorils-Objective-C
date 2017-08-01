@@ -47,6 +47,29 @@ var tutorials = [
 ];
 
 
+var comments = [
+  {
+    username: "jackd942",
+    comment: "This video was cool"
+  }
+];
+
+app.post('/comments', function(req, res) {
+  var comment = req.body;
+  if (comment) {
+    if (comment.useranme && comment.comment) {
+      comments.push(comment);
+    } else {
+      res.send("You posted invalid data");
+    }
+  } else {
+    res.send("Your post has no body!");
+  }
+
+  console.log(comments);
+  res.send("You successfully posted a comment");
+});
+
 app.get('/tutorials', function(req, res) {
   console.log("GET from server");
   res.send(tutorials);
