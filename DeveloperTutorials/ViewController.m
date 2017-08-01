@@ -10,6 +10,7 @@
 #include "HTTPService.h"
 #import "Video.h"
 #import "VideoCell.h"
+#import "VideoVC.h"
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -38,8 +39,8 @@
                 Video *v = [[Video alloc]init];
                 v.videoTitle = [d objectForKey:@"title"];
                 v.videoDescription = [d objectForKey:@"description"];
-                v.videoIframe = [d objectForKey:@"thumbnail"];
-                v.thumbnailUrl = [d objectForKey:@"iframe"];
+                v.thumbnailUrl = [d objectForKey:@"thumbnail"];
+                v.videoIframe = [d objectForKey:@"iframe"];
                 
                 [arr addObject:v];
             }
@@ -81,7 +82,11 @@
 }
 
 
-- (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath {
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    Video *video = [self.videoList objectAtIndex:indexPath.row];
+    
+    [self performSegueWithIdentifier:@"videoVC" sender:video];
     
 }
 
@@ -91,6 +96,13 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return self.videoList.count;
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    VideoVC *vc = (VideoVC*)segue.destinationViewController;
+    Video *video = (Video*)sender;
+    
+    vc.video = video;
 }
 
 @end

@@ -112,11 +112,90 @@
                     </view>
                     <connections>
                         <outlet property="tableView" destination="uxa-qN-IpV" id="f12-dC-RkI"/>
+                        <segue destination="DVl-MG-JjC" kind="presentation" identifier="videoVC" id="GRi-FL-vmN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="117.59999999999999" y="122.78860569715144"/>
+        </scene>
+        <!--VideoVC-->
+        <scene sceneID="Njj-SR-Yg8">
+            <objects>
+                <viewController id="DVl-MG-JjC" customClass="VideoVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="A8t-sC-Xkf"/>
+                        <viewControllerLayoutGuide type="bottom" id="sZh-Pu-OXt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TdF-mT-TAl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SOR-5i-9dp">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="274"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="274" id="FDw-Gn-NcR"/>
+                                </constraints>
+                            </webView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Photoshop Tutorial For Beginners How To Create a Log. Photoshop Tutorial For Beginners How To Create a Log" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZW4-JB-qQI">
+                                <rect key="frame" x="16" y="289" width="343" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="abK-4V-UJv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Photoshop Tutorial For Beginners How To Create a Log. Photoshop Tutorial For Beginners How To Create a Log" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hsy-lK-qki">
+                                <rect key="frame" x="16" y="358" width="343" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="UGx-T9-kOK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zdQ-Ip-UYm">
+                                <rect key="frame" x="16" y="594" width="343" height="53"/>
+                                <color key="backgroundColor" red="0.95686274509803915" green="0.2627450980392157" blue="0.21176470588235294" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="Own-hn-giw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="21"/>
+                                <state key="normal" title="DONE">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="donePressed:" destination="DVl-MG-JjC" eventType="touchUpInside" id="ANv-Fe-Zdd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zdQ-Ip-UYm" firstAttribute="trailing" secondItem="TdF-mT-TAl" secondAttribute="trailingMargin" id="21D-v0-tW6"/>
+                            <constraint firstItem="hsy-lK-qki" firstAttribute="leading" secondItem="TdF-mT-TAl" secondAttribute="leadingMargin" id="7Su-oD-ERe"/>
+                            <constraint firstItem="hsy-lK-qki" firstAttribute="top" secondItem="ZW4-JB-qQI" secondAttribute="bottom" constant="18" id="ICF-wZ-lsT"/>
+                            <constraint firstItem="sZh-Pu-OXt" firstAttribute="top" secondItem="zdQ-Ip-UYm" secondAttribute="bottom" constant="20" id="Mih-Lu-L2Q"/>
+                            <constraint firstItem="zdQ-Ip-UYm" firstAttribute="leading" secondItem="TdF-mT-TAl" secondAttribute="leadingMargin" id="OSN-EP-v3x"/>
+                            <constraint firstItem="ZW4-JB-qQI" firstAttribute="leading" secondItem="TdF-mT-TAl" secondAttribute="leadingMargin" id="Uf7-TI-iYw"/>
+                            <constraint firstItem="SOR-5i-9dp" firstAttribute="top" secondItem="TdF-mT-TAl" secondAttribute="top" id="W9d-5Y-AO1"/>
+                            <constraint firstItem="hsy-lK-qki" firstAttribute="trailing" secondItem="TdF-mT-TAl" secondAttribute="trailingMargin" id="dzm-dz-Xff"/>
+                            <constraint firstItem="ZW4-JB-qQI" firstAttribute="top" secondItem="SOR-5i-9dp" secondAttribute="bottom" constant="15" id="kLj-bx-QGu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZW4-JB-qQI" secondAttribute="trailing" id="oGy-eY-6uA"/>
+                            <constraint firstAttribute="trailing" secondItem="SOR-5i-9dp" secondAttribute="trailing" id="xuE-qU-dHl"/>
+                            <constraint firstItem="SOR-5i-9dp" firstAttribute="leading" secondItem="TdF-mT-TAl" secondAttribute="leading" id="yrq-5P-DIO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="descLbl" destination="hsy-lK-qki" id="FdA-ic-fKZ"/>
+                        <outlet property="titleLbl" destination="ZW4-JB-qQI" id="IkG-DX-zLb"/>
+                        <outlet property="webView" destination="SOR-5i-9dp" id="Llt-3Z-fzv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kGZ-Hy-Uj5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="821.60000000000002" y="122.78860569715144"/>
         </scene>
     </scenes>
 </document>
